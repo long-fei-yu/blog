@@ -1,0 +1,43 @@
+{
+  "name": "webpack-optimize",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack": "webpack --config config/webpack.config.js",
+    "webpack:devtool": "webpack --config config/webpack_devtool.config.js",
+    "webpack:server": "webpack-dev-server --config config/webpack_server.config.js --open",
+    "webpack:hmr": "webpack-dev-server --config config/webpack_hmr.config.js --open",
+    "webpack:tree_shaking": "webpack --config config/webpack_tree_shaking.config.js",
+    "webpack:side_effects": "webpack --config config/webpack_side_effects.config.js",
+    "webpack:multiple_entry": "webpack --config config/webpack_multiple_entry.config.js",
+    "webpack:loading": "webpack --config config/webpack_loading.config.js",
+    "webpack:production": "webpack --config config/webpack_production.config.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "babel-loader": "^8.1.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^6.0.4",
+    "css-loader": "^4.2.2",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^4.3.0",
+    "mini-css-extract-plugin": "^0.11.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.4",
+    "style-loader": "^1.2.1",
+    "terser-webpack-plugin": "^4.1.0",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-merge": "^5.1.3"
+  },
+  "dependencies": {},
+  "sideEffects": [
+    "./src/components/extend.js",
+    "*.css"
+  ]
+}
