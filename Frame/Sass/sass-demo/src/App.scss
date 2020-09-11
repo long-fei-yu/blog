@@ -1,0 +1,5 @@
+@import './common/index';
+
+.polygon {
+  @include clip-polygon(4, $color-FF0000);
+}
