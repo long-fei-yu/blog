@@ -1,0 +1,6 @@
+# 忽略node_modules  build
+/node_modules
+/build
+/src/*.test.js
+src/reportWebVitals.js
+src/setupTests.js
