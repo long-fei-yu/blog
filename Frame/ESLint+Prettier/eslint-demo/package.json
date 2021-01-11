@@ -1,0 +1,12 @@
+{
+  "name": "eslint-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "eslint": "eslint src"
+  },
+  "devDependencies": {
+    "eslint": "^7.17.0"
+  }
+}
