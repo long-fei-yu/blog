@@ -907,6 +907,8 @@ instanceof运算符只能用于对象，不适用原始类型的值。
 
 （）原型对象是类的唯一标识，构造函数是类的公共标识。
 
+![原型对象](https://images0.cnblogs.com/blog/138012/201409/181637013624694.png)
+
 每个函数都有一个prototype属性，指向一个对象。
 
 	// 空对象的原型是 Object.prototype
